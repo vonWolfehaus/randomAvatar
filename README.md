@@ -2,6 +2,8 @@
 
 A tiny script for generating attractive random avatars. Relies on [randomColor](https://github.com/davidmerfield/randomColor). Better than those weird Gravatar shapes, more exciting than a solid color. See `index.html` for some samples.
 
+![Demo](randomAvatar.jpg)
+
 Only built to be used in the browser. Never tested with nodejs, but it's wrapped in a UMD pattern. To use it:
 
 ```javascript
