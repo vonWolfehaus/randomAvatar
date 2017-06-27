@@ -1,6 +1,6 @@
 # Random Avatar
 
-A tiny script for generating attractive random avatars. Relies on [randomColor](https://github.com/davidmerfield/randomColor). Better than those weird Gravatar shapes, more exciting than a solid color. See `index.html` for some samples.
+A tiny script for generating attractive random avatars. Relies on [randomColor](https://github.com/davidmerfield/randomColor) and the canvas element. Better than those weird Gravatar shapes, more exciting than a solid color. See `index.html` for some samples.
 
 ![Demo](randomAvatar.jpg)
 
