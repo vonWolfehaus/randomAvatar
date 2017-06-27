@@ -35,7 +35,7 @@
 		opts = {
 			size: options.size || 128,
 			style: options.style || 'random',
-			text: options.text || randomText(),
+			text: typeof options.text === 'undefined' ? randomText() : options.text,
 			contrast: options.contrast || 25,
 			luminosity: options.luminosity || 'bright'
 		}
