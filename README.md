@@ -10,7 +10,7 @@ var div = document.getElementById('a-random-element'); // grab some element that
 div.appendChild(avatar); // place it in the DOM
 ```
 
-# Options
+## Options
 
 `size` - All generated avatars are square, so this value is used for both width and height [default: `128`]
 
@@ -21,3 +21,21 @@ div.appendChild(avatar); // place it in the DOM
 `contrast` - Adjusts the contrast of the background colors, with higher values providing a lot more color variations. Values too high will make the text difficult to read, recommended values are 0-40) [default: `25`]
 
 `luminosity` - Directly passed to randomColorjs, controls the luminosity of the generated color. You can specify a string containing `random`, `bright`, `light` or `dark` [default: `bright`]
+
+## Examples
+
+```javascript
+// returns a 128x128 Image element with a square tile background in a lovely springtime pastel hue and the text "CB" overlaying it
+randomAvatar({
+	size: 128,
+	luminosity: 'light',
+	style: 'square',
+	text: 'CB'
+})
+
+// returns a 32x32 Image element with a random background pattern and no text
+randomAvatar({
+	size: 32,
+	text: ''
+})
+```
