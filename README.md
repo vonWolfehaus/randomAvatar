@@ -4,7 +4,7 @@ A tiny script for generating attractive random avatars. Relies on [randomColor](
 
 Only built to be used in the browser. Never tested with nodejs, but it's wrapped in a UMD pattern. To use it:
 
-```
+```javascript
 var avatar = randomAvatar(); // an image element for easy display
 var div = document.getElementById('a-random-element'); // grab some element that's on your website
 div.appendChild(avatar); // place it in the DOM
