@@ -28,7 +28,7 @@
 			margin-right: 10px;
 			margin-bottom: 5px;
 			border-radius: 50%;
-			width: 32px;
+			width: 64px;
 			height: auto;
 		}
 	</style>
@@ -46,33 +46,32 @@
 			size: 128,
 			// contrast: 25,
 			// luminosity: 'light',
-			// style: 'square',
-			// text: 'WW'
+			style: 'circle',
+			// text: ''
 		}
 
-		for (var i = 0; i < 4; i++) {
+		for (var i = 0; i < 10; i++) {
 			a = randomAvatar(opts)
 			displayAvatar(a)
 		}
 
-		// opts.style = 'hex'
-		for (var i = 0; i < 4; i++) {
+		opts.style = 'hex'
+		for (var i = 0; i < 10; i++) {
 			a = randomAvatar(opts)
 			displayAvatar(a)
 		}
 
-		// opts.style = 'square'
-		for (var i = 0; i < 4; i++) {
+		opts.style = 'square'
+		for (var i = 0; i < 10; i++) {
 			a = randomAvatar(opts)
 			displayAvatar(a)
 		}
 
 		function displayAvatar(ava) {
-			var div = document.getElementById('the-thing');
+			var div = document.getElementById('the-thing')
 			div.appendChild(ava)
 		}
-
-	}, false);
+	}, false)
 </script>
 </body>
 </html>
