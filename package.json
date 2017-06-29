@@ -1,0 +1,22 @@
+{
+  "name": "randomAvatar",
+  "version": "1.0.0",
+  "description": "A tiny script for generating attractive random avatars",
+  "main": "randomAvatar.js",
+  "scripts": {
+    "build": "mkdir -p dist && uglifyjs lib/randomColor.js randomAvatar.js -m -o dist/randomAvatar.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vonWolfehaus/randomAvatar.git"
+  },
+  "author": "Corey Birnbaum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vonWolfehaus/randomAvatar/issues"
+  },
+  "homepage": "https://github.com/vonWolfehaus/randomAvatar#readme",
+  "devDependencies": {
+    "uglify-js": "^3.0.21"
+  }
+}

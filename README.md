@@ -24,6 +24,8 @@ div.appendChild(avatar); // place it in the DOM
 
 `luminosity` - Directly passed to randomColorjs, controls the luminosity of the generated color. You can specify a string containing `random`, `bright`, `light` or `dark` [**default:** `bright`]
 
+`outputType` - Which data type to return. If `image` is specified it will return an Image element. Otherwise, `canvas` will return the raw canvas element [**default:** `image`]
+
 ## Examples
 
 ```javascript

@@ -37,7 +37,8 @@
 			style: options.style || 'random',
 			text: typeof options.text === 'undefined' ? randomText() : options.text,
 			contrast: options.contrast || 25,
-			luminosity: options.luminosity || 'bright'
+			luminosity: options.luminosity || 'bright',
+			outputType: options.outputType || 'image'
 		}
 
 		if (!canvas) {
@@ -84,6 +85,10 @@
 		}
 
 		drawText(opts.text)
+
+		if (opts.outputType === 'canvas') {
+			return canvas;
+		}
 
 		var image = new Image();
 		image.src = canvas.toDataURL('image/png');
